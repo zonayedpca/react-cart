@@ -1,6 +1,7 @@
 {
   "name": "react-cart",
   "version": "0.1.0",
+  "homepage": "https://zonayedpca.github.io/react-cart",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^1.2.2",

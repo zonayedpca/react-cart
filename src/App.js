@@ -31,7 +31,7 @@ class App extends Component {
       let oneCartItems = allCartItems.filter(item => item.id === id);
       allCartItems = allCartItems.filter(item => item.id !== id);
       oneCartItems = oneCartItems[0];
-      oneCartItems.quantity += 1; 
+      oneCartItems.quantity += 1;
       allCartItems = [...allCartItems, ...oneCartItems];
     } else {
       let newItem = items.filter(item => item.id === id);
@@ -50,7 +50,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename='/react-cart/'>
         <div className="App">
           <Container className="container">
             <Menubar cartItems={this.state.cartItems} />
